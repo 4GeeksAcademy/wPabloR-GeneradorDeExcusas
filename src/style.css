@@ -3,3 +3,10 @@
 body{
     background: white;
 }
+
+.excusa {
+    display: flex;
+}
+#excusa{
+    margin: auto;
+}
