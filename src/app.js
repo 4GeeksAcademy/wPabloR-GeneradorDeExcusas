@@ -11,15 +11,16 @@ window.onload = function() {
   let what = [`los deberes`, `la tv`, `los platos`, `la ropa`];
   let when = [`mientras dormía`, `al volver a casa`, `de madrugada`, `de vacaciones`];
 
-  let quienes = who[Math.floor(Math.random() * who.length)];
-  let accion = action[Math.floor(Math.random() * action.length)];
-  let que = what[Math.floor(Math.random() * what.length)];
-  let cuando = when[Math.floor(Math.random() * when.length)];
 
-  let excusa = quienes + " " + accion + " " + que + " " + cuando
 
+  function select(arr){
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+ 
+  let excusa = select(who) + " " + select(action) + " " + select(what) + " " + select(when) 
 
    document.querySelector("#excusa").innerHTML = excusa
-
-  console.log("Hello Rigo from the console!");
+ 
+   
 };
