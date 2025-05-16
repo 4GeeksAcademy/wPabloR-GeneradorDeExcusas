@@ -13,12 +13,12 @@ window.onload = function() {
 
 
 
-  function select(arr){
-    return arr[Math.floor(Math.random() * arr.length)];
+  function getRandomElement(array){
+    return array[Math.floor(Math.random() * array.length)];
   }
 
  
-  let excusa = select(who) + " " + select(action) + " " + select(what) + " " + select(when) 
+  let excusa = getRandomElement(who) + " " + getRandomElement(action) + " " + getRandomElement(what) + " " + getRandomElement(when) 
 
    document.querySelector("#excusa").innerHTML = excusa
  
